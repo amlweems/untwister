@@ -24,6 +24,8 @@ PRNGFactory::PRNGFactory()
     library[RUBY_RAND] = &create<Ruby>;
     library[PHP_MT_RAND] = &create<PHP_mt19937>;
     library[JAVA] = &create<Java>;
+    library[NEWLIB] = &create<Newlib>;
+    library[WICED] = &create<Wiced>;
 }
 
 PRNGFactory::~PRNGFactory() {}
